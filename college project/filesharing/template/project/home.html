@@ -1,0 +1,193 @@
+{% extends "project/base.html" %}
+
+{%  block content %}
+<header>
+    <nav class="navbar">
+       <div><h2>Get <span>iT</span>
+       </h2></div>
+       <div class="top">
+           <div class="Dash"><h3> <a href="{url 'dashboard.html'}">Dashboard</a></h3></div>        
+        <div class="profile">
+          <div class="info">
+            <p>User</p>       
+          </div>
+          <div class="profile-photo">
+            <img src="static/images/nima1.jpg" alt="" />
+          </div>
+        </div>
+      </div>
+    </nav>
+</header>
+<section class="hero-section" id="hero">
+
+    <div class="main">
+        <!-- index.html -->
+        <div class="search-container">
+            <form action="/search" method="get">
+                <input type="text" placeholder="Search..." name="q">
+                <button type="submit">Search</button>
+            </form>
+        </div>
+    </div>
+    <div class="note"> <span>**Note you must upload min 10mb files before downloading any documents.**</span></div>
+</section>
+<!-- <section class="document">
+
+    <div class="docu">
+        <h2>DOCUMENT</h2>
+    </div>
+    <div class="files_container">
+        <div class="doc1">
+           <a href=""> <img width="150px" src="static/images/FILES2.jpg" alt="files1"></a>
+        </div>
+        <div class="doc2">
+           <a href=""> <img width="150px" src="static/images/FILES3.jpg" alt="files1"></a>
+        </div>
+        
+         <div class="doc3">
+            <img width="350px" src="static/images/man2.png" alt="man2">
+        </div>
+
+    </div>
+   
+
+</section> -->
+<!-- <section class="carousel">
+        
+    </section> -->
+    <section class="Carousel1">
+    <section class="work">
+        <div class="grid_item">
+            <div class="card">
+                <div class="image_container">
+                    <img src="static/images/web9.png" alt="Web Development"/>
+    
+                </div>
+                <div class="card_content">
+                    <h3>Web Development </h3>
+                    <p> Accelerated Mobile Pages (AMP) is the future of web development. AMP technology is introduced to create web pages that load faster on mobile by stripping down HTML.</p>
+                </div>
+    
+            </div>
+        </div>
+        <div class="grid_item">
+            <div class="card">
+                <div class="image_container">
+                    <img src="static/images/uiux.png" alt="Web Development"/>
+    
+                </div>
+                <div class="card_content">
+                    <h3>UI/UX Development </h3>
+                    <p> It renders the latest technology accessible to the masses, makes our favourite apps and websites a pleasure to use.</p>
+                </div>
+    
+            </div>
+        </div>
+        
+        <div class="grid_item">
+            <div class="card">
+                <div class="image_container">
+                    <img src="static/images/app1.png" alt="Web Development"/>
+    
+                </div>
+                <div class="card_content">
+                    <h3>App Development </h3>
+                    <p> Mobile app would help put your business in your customer’s pockets.The future of mobile is the future of online.</p>
+                </div>
+    
+            </div>
+        </div>
+        
+
+        </div>
+        <div class="grid_item">
+        <div class="card">
+            <div class="image_container">
+                <img src="static/images/uiux.png" alt="UI/UX Development"/>
+
+            </div>
+            <div class="card_content">
+                <h3>UI/UX Development </h3>
+                <p> It renders the latest technology accessible to the masses, makes our favourite apps and websites a pleasure to use.</p>
+            </div>
+
+        </div>
+    </div>
+    <div class="grid_item">
+        <div class="card">
+            <div class="image_container">
+                <img src="static/images/app1.png" alt="App Development"/>
+
+            </div>
+            <div class="card_content">
+                <h3>App Development </h3>
+                <p> Mobile app would help put your business in your customer’s pockets.The future of mobile is the future of online.</p>
+            </div>
+        </div>
+
+
+     </section>
+    </section>
+     <section class="footer-upper">
+            <div class="container">
+              <div class="logoget">
+                <h2>Get <span>iT</span></h2>
+               
+              </div>
+              <div class="footer-links">
+                <h4>Support</h4>
+                <ul>
+                  <a href="{% url 'aboutus' %}"><li>About Us</li></a>
+                  <li>E-Learning Statitics</li>
+                  <li>Academic Integrity</li>
+                  <li>Blog</li>
+                  <li>Company</li>
+                </ul>
+              </div>
+              <div class="footer-links2">
+                <h4>Contact & Help</h4>
+                <ul>
+                    <a href="{% url 'contact' %}"><li>Contact</li></a>
+                  <li>F.A.Q</li>
+                  <li>Help</li>
+                  <li>Privacy Policy</li>
+                  <li>Learning resources</li>
+                  
+                </ul>
+              </div>
+
+              <div>
+               <div></div>
+
+                    </div>
+                
+          
+          </section>
+
+
+   
+    <footer>
+        
+        <ul class="social">
+            <div>Copyright © 2023. All Rights Reserved</span></div>
+           <div class="sociallogo">
+            <a href="https://www.linkedin.com/in/nima-dorjee-lama-b44081217" target="_blank">
+                <li><img src="static/images/linkedin-logo.png" class="link" alt="Linkedin" ></li>
+            </a>
+            <a href="https://www.facebook.com/nima.lama.50999405?mibextid=LQQJ4d" target="_blank">
+                <li><img src="static/images/fb_logo.png" class="link" alt="facebook"></li>
+            </a>
+            <a href="https://instagram.com/nyima_21?igshid=YmMyMTA2M2Y=" target="_blank">
+                <li><img class="link" src="static/images/insta_logo.png" alt="insta"></li>
+            </a>
+            <a href="https://github.com/NIMADORJEELAMA" target="_blank">
+                <li><img class="link" src="static/images/github_logo.png" alt="github" ></li>
+            </a>
+            </div>
+
+            
+        </ul>
+     </footer>
+
+
+{% endblock  %}

@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&family=Poppins:wght@300;400;600&family=Source+Sans+3:wght@400;600;700&display=swap');
+
+body{
+ 
+font-family: 'Poppins', sans-serif;
+
+}
+
+
+/* variables */
+
+
+:root {
+  --clr-primary: #7380ec;
+  --clr-danger: #ff7782;
+  --clr-success: #41f1b6;
+  --clr-white: #fff;
+  --clr-info-dark: #7d8da1;
+  --clr-info-light: #dce1eb;
+  --clr-dark: #363949;
+  --clr-warnig: #ff4edc;
+  --clr-light: rgba(132, 139, 200, 0.18);
+  --clr-primary-variant: #111e88;
+  --clr-dark-variant: #677483;
+  --clr-color-background: #f6f6f9;
+
+  --card-border-radius: 2rem;
+  --border-radius-1: 0.4rem;
+  --border-radius-2: 0.8rem;
+  --border-radius-3: 1.2rem;
+
+  --card-padding: 1.8rem;
+  --padding-1: 1.2rem;
+  --box-shadow: 0 2rem 3rem var(--clr-light);
+
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: 0;
+    list-style: none;
+    appearance: none;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    width: 100vw;
+    height: 100vh;
+    font-size: 0.88rem;
+    user-select: none;
+    overflow-x: hidden;
+    background: var(--clr-color-background);
+
+}
+        .error{
+            color:red;
+        }
+        body{
+            background:url("https://assets.telegraphindia.com/telegraph/2021/Sep/1632989976_main-gate-university.jpg");
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-position: center;
+            background-size:100% 100%;
+           
+        }
+        h1 {
+            margin-bottom:27px;
+            color:white;
+
+        }
+        form {
+            
+            align: center;
+            width: 25%;
+           position: absolute;
+            margin: auto;
+            padding: 50px 20px; 
+            margin-top: 209px;
+            margin-left:65%;
+            padding-top: 35px;
+           
+            border-radius: 12px;
+            background-color:var(--clr-info-dark);
+            color:white;
+            backdrop-filter: blur(10px);
+    background-color: rgba(255,255,255,0.13);
+            
+           
+    
+        }
+     
+    
+        .login h1{
+            padding-top: 20px;
+            margin-left: 70px;
+        }
+        .password{
+            line-height: 2;
+            font-size: 1.3rem;
+        }
+
+        .submit{
+            margin-left: 2rem;
+            border-radius: 20px;
+            padding: 3px 15px;
+            cursor: pointer;
+            font-family: 'poppins';
+        }
+        .submit:hover{
+            background-color: var(--clr-dark-variant);
+            color: white;
+        }
+        .sign a{
+            margin-left: 5rem;
+        }
+        .sign h4{
+            margin-top: 10%;
+            margin-left: 28%;
+        }
+        .signup{
+            padding: 5px 10px;
+            color: black;
+            font-size: 12px;
+            background-color: whitesmoke;
+            border-radius: 20px;
+        }
+        .signup:hover{
+            background-color: var(--clr-dark-variant);
+        }
+        a{
+            color:yellow;
+        }
+
+        .sign a:hover{
+            text-decoration: underline;
+        }
+        
+
+    </style>
+</head>
+<body>
+
+    <form action="" method="POST" novalidate>
+        <div class="login">
+            <h1>Login Form</h1>
+        </div>
+        
+        {% csrf_token %}
+        {%for fm in form%}
+        <div class="password">
+            {{fm.label_tag}} {{fm}} {{fm.errors|striptags}}<br><br>
+        </div>
+      
+        {% endfor %}
+        <div class="sign">
+
+        
+        <input class="submit" type="submit" value="Log in"> &nbsp;
+        <a class="signup" href="{% url 'signup' %}">Sign up</a>
+        <a href=""> <h4>Log In as Admin</h3></a>
+        {% if form.non_field_errors %}
+            {% for error in form.non_field_errors %}
+                <p class="error">{{error}}</p>
+            {% endfor %}
+        {% endif %}
+    </div>
+    </form>
+
+</body>
+</html>

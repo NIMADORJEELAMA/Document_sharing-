@@ -1,0 +1,369 @@
+{% extends "project/base.html" %}
+
+{%  block content %}
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>UI/UX</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <!--aside start-->
+      <aside>
+        <div class="top">
+          <div class="logo">
+            <h2>Get<span class="danger"> iT</span></h2>
+          </div>
+          <div class="close" id="close_btn">
+            <span class="material-symbols-outlined">close</span>
+          </div>
+        </div>
+        <!--end top-->
+        <div class="sidebar">
+          <a href="#">
+            <span class="material-symbols-outlined">home</span>
+            <h3>Home</h3>
+          </a>
+          <a href="#" >
+            <span class="material-symbols-outlined">menu_book</span>
+            <h3>My library</h3> </a
+          ><a href="#">
+            <span class="material-symbols-outlined">play_lesson</span>
+            <h3>Courses</h3> </a
+          ><a href="#">
+            <span class="material-symbols-outlined">book_2</span>
+            <h3>Books</h3> </a
+          ><a href="#">
+            <span class="material-symbols-outlined">bookmarks</span>
+            <h3>Recent Documents</h3> </a
+          ><a href="#">
+            <span class="material-symbols-outlined">auto_stories</span>
+            <h3>Studylists</h3> </a
+          ><a href="#">
+            <span class="material-symbols-outlined">settings</span>
+            <h3>Settings</h3> </a
+          ><a href="#">
+            <span class="material-symbols-outlined">add</span>
+            <h3>Add notes</h3>
+          </a>
+          <a href="#">
+            <span class="material-symbols-outlined">logout</span>
+            <h3>Logout</h3>
+          </a>
+        </div>
+      </aside>
+      <!--aside end-->
+
+      <!--main start-->
+      <main>
+        <h1>Dashboard</h1>
+        <hr />
+        <div class="filter">
+          <div class="filter_inside">
+            <h4>Department Filter</h4>
+
+            <div class="dropdown">
+              <button class="dropbtn">
+                Filter by department
+                <span class="material-symbols-outlined">expand_more</span>
+              </button>
+
+              <div class="dropdown-content">
+                <a href="#">BTech IT</a>
+                <a href="#">BTech CSE</a>
+                <a href="#">BCA </a>
+                <a href="#">BSc  </a>
+                <a href="#">BSc IT </a>
+                <a href="#">MSc </a>
+                <a href="#">MCA </a>
+
+              </div>
+            </div>
+          </div>
+          <div class="filter_inside_2">
+            <h4>Category filter</h4>
+            <div class="dropdown">
+              <button class="dropbtn">
+                Filter by Category
+                <span class="material-symbols-outlined">expand_more</span>
+              </button>
+              <div class="dropdown-content">
+                <a href="#">Lecture Notes</a>
+                <a href="#">Practical</a>
+                <a href="#">Practice Materials</a>
+                <a href="#">Summaries</a>
+                <a href="#">Assignments</a>
+                <a href="#">Others</a>
+
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="insights">
+          <!--start selling-->
+          <div class="sales">
+            <a href="">
+              <div class="middle">
+                <div class="left">
+                  <h4>
+                    <span class="material-symbols-outlined">folder</span>Courses
+                  </h4>
+                  <h3>Computer Science (A.I)</h3>
+                </div>
+              </div>
+              <small>Dipesh Jha</small>
+            </a>
+          </div>
+          <!--end selling-->
+          <!--start selling-->
+          <div class="sales">
+            <a href="">
+              <div class="middle">
+                <div class="left">
+                  <h4>
+                    <span class="material-symbols-outlined">folder</span>Courses
+                  </h4>
+                  <h3>Mathematics</h3>
+                </div>
+              </div>
+              <small>Ayush Kumar</small>
+            </a>
+          </div>
+          <!--end selling-->
+          <!--start selling-->
+          <div class="sales">
+            <a href="">
+              <div class="middle">
+                <div class="left">
+                  <h4>
+                    <span class="material-symbols-outlined">folder</span>Courses
+                  </h4>
+                  <h3>Machine Learning (ML)</h3>
+                </div>
+              </div>
+              <small>Kowsar Jaman Mollah</small>
+            </a>
+          </div>
+          <!--end selling-->
+        </div>
+        <!--end inside-->
+        <!--start recent order-->
+        <ul>
+          <li>
+            <div class="recent_order">
+          
+          <div class="main_div">
+            <div class="left_div">
+              <img src="/static/images/download2.jpeg" alt="" />
+            </div>
+            <div class="right_div">
+              <a href="'upload.html"><h1>Django-Overview</h1></a>
+              <h3>
+                <span class="material-symbols-outlined">folder</span
+                >Django-Overview(Dj-2321) <span class="dept">BTech IT</span>
+              </h3>
+            
+              <h4><span class="material-symbols-outlined">description</span>110 Pages <span class="submitted">Nima Dorjee Lama</span></h4>
+            </div>
+          </div></a>
+        </div>
+          </li>
+          <li>
+            <div class="recent_order">
+          
+          <div class="main_div">
+            <div class="left_div">
+              <img src="/static/images/download_1.png" alt="" />
+            </div>
+            <div class="right_div">
+              <a href=""><h1>C++</h1></a>
+              <h3>
+                <span class="material-symbols-outlined">folder</span
+                >C++ Programming Language(CPP-34) <span class="dept">BTech IT</span>
+              </h3>
+            
+              <h4><span class="material-symbols-outlined">description</span>110 Pages <span class="submitted">Nima Dorjee Lama</span></h4>
+            </div>
+          </div></a>
+        </div>
+          </li><li>
+            <div class="recent_order">
+          
+          <div class="main_div">
+            <div class="left_div">
+              <img src="/static/images/download_1.png" alt="" />
+            </div>
+            <div class="right_div">
+              <a href=""><h1>C++</h1></a>
+              <h3>
+                <span class="material-symbols-outlined">folder</span
+                >C++ Programming Language(CPP-34) <span class="dept">BTech IT</span>
+              </h3>
+            
+              <h4><span class="material-symbols-outlined">description</span>110 Pages <span class="submitted">Nima Dorjee Lama</span></h4>
+            </div>
+          </div></a>
+        </div>
+          </li><li>
+            <div class="recent_order">
+          
+          <div class="main_div">
+            <div class="left_div">
+              <img src="/static/images/download2.jpeg" alt="" />
+            </div>
+            <div class="right_div">
+              <a href="'upload.html"><h1>Django-Overview</h1></a>
+              <h3>
+                <span class="material-symbols-outlined">folder</span
+                >Django-Overview(Dj-2321) <span class="dept">BTech IT</span>
+              </h3>
+            
+              <h4><span class="material-symbols-outlined">description</span>110 Pages <span class="submitted">Nima Dorjee Lama</span></h4>
+            </div>
+          </div></a>
+        </div>
+          </li><li>
+            <div class="recent_order">
+          
+          <div class="main_div">
+            <div class="left_div">
+              <img src="/static/images/download2.jpeg" alt="" />
+            </div>
+            <div class="right_div">
+              <a href="'upload.html"><h1>Django-Overview</h1></a>
+              <h3>
+                <span class="material-symbols-outlined">folder</span
+                >Django-Overview(Dj-2321) <span class="dept">BTech IT</span>
+              </h3>
+            
+              <h4><span class="material-symbols-outlined">description</span>110 Pages <span class="submitted">Nima Dorjee Lama</span></h4>
+            </div>
+          </div></a>
+        </div>
+          </li><li>
+            <div class="recent_order">
+          
+          <div class="main_div">
+            <div class="left_div">
+              <img src="/static/images/download2.jpeg" alt="" />
+            </div>
+            <div class="right_div">
+              <a href="'upload.html"><h1>Django-Overview</h1></a>
+              <h3>
+                <span class="material-symbols-outlined">folder</span
+                >Django-Overview(Dj-2321) <span class="dept">BTech IT</span>
+              </h3>
+            
+              <h4><span class="material-symbols-outlined">description</span>110 Pages <span class="submitted">Nima Dorjee Lama</span></h4>
+            </div>>
+          </div></a>
+        </div>
+          </li><li>
+            <div class="recent_order">
+          
+          <div class="main_div">
+            <div class="left_div">
+              <img src="/static/images/download2.jpeg" alt="" />
+            </div>
+            <div class="right_div">
+              <a href="'upload.html"><h1>Django-Overview</h1></a>
+              <h3>
+                <span class="material-symbols-outlined">folder</span
+                >Django-Overview(Dj-2321) <span class="dept">BTech IT</span>
+              </h3>
+            
+              <h4><span class="material-symbols-outlined">description</span>110 Pages <span class="submitted">Nima Dorjee Lama</span></h4>
+            </div>
+          </div></a>
+        </div>
+          </li>
+          
+        </ul>
+     
+      </main>
+      <!--Main end-->
+      <!--right start-->
+      <div class="right">
+        <div class="top">
+          
+        
+          <div class="profile">
+            <div class="info">
+              <p><b>Nima</b></p>
+              <p>User</p>
+              <small class="text-muted"></small>
+            </div>
+            <div class="profile-photo">
+              <img src="/static/images/nima1.jpg" alt="" />
+            </div>
+          </div>
+        </div>
+        <!--end top-->
+        <!--start recent update-->
+        <div class="recent_updates">
+          <h2>Recent Downloads</h2>
+          <div class="updates">
+            <div class="update">
+              <div class="profile-photo">
+                <span class="material-symbols-outlined">folder</span>
+                
+              </div> <a href=""><h3>Artificial Intelligence</h3></a>
+             
+            </div>
+            <div class="update">
+              <div class="profile-photo">
+                <span class="material-symbols-outlined">folder</span>
+                
+              </div> <a href=""><h3>Robotics</h3></a>
+             
+            </div>
+            <div class="update">
+              <div class="profile-photo">
+                <span class="material-symbols-outlined">folder</span>
+                
+              </div> <a href=""><h3>Machine Learning</h3></a>
+             
+            </div><div class="update">
+              <div class="profile-photo">
+                <span class="material-symbols-outlined">folder</span>
+                
+              </div> <a href=""><h3>Cloud Computing</h3></a>
+             
+            </div><div class="update">
+              <div class="profile-photo">
+                <span class="material-symbols-outlined">folder</span>
+                
+              </div> <a href=""><h3>Mobile Computing</h3></a>
+             
+            </div><div class="update">
+              <div class="profile-photo">
+                <span class="material-symbols-outlined">folder</span>
+                
+              </div> <a href=""><h3>Mathematics</h3></a>
+             
+            </div>
+            
+            
+          </div>
+          
+        </div>
+        <!--end recent update-->
+       
+      </div>
+
+      <!--Right end-->
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
+{% endblock  %}
